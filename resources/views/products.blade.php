@@ -236,14 +236,11 @@
 												</div>
 												<div class="header">
 														<div class="date p-l-5">
-															<span class="day">{{$product->created_at}}</span>
-															<span class="month">Aug</span>
-															<span class="year">2016</span>
+															<span class="day">{{$product->created_at->format('d M Y')}}</span>
 														</div>
 														<ul class="menu-content">
 															<li><a href="#" class="fa fa-shopping-cart"></a></li>
-															<li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-															<li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+															<li><a href="#" class="fa fa-heart-o"><span>{{rand(1,25)}}</span></a></li>
 														</ul>
 													</div>
 											</div>

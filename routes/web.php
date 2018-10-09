@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use App\cat;
+use App\Http\Controllers\CheckoutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +39,7 @@ Route::post('/update', 'CartController@update')->name('cart.update');
 Route::get('/cart', 'CartController@index')->name('cart');
 Route::post('/cart', 'CartController@store')->name('cart.store');
 Route::get('/remove/{id}', 'CartController@destroy')->name('cart.destroy');
+Route::post('/checkout', 'CheckoutController@index')->name('checkout');
 
 Auth::routes();
 

@@ -100,9 +100,7 @@
 									</div>
 									<div class="header">
 											<div class="date p-l-5">
-												<span class="day">{{$product->created_at}}</span>
-												<span class="month">Aug</span>
-												<span class="year">2016</span>
+												<span class="day">{{$product->created_at->format('d M Y')}}</span>
 											</div>
 											<ul class="menu-content">
 												<li><a href="#" class="fa fa-shopping-cart"></a></li>

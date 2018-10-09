@@ -401,7 +401,7 @@
 
 				<div>
 					<p class="s-text7 w-size27">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Any questions? Let me know. call me on <a href="#" class="s-text7"> (+88) 01795 514777</a>
 					</p>
 
 					<div class="flex-m p-t-30">
@@ -420,29 +420,13 @@
 				</h4>
 
 				<ul>
+					@foreach ($cats as $cat)
 					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Men
+						<a href="{{route('products', ['cat'=> $cat->slug])}}" class="s-text7">
+							{{$cat->name}}
 						</a>
 					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Women
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Dresses
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Sunglasses
-						</a>
-					</li>
+					@endforeach
 				</ul>
 			</div>
 
@@ -534,28 +518,32 @@
 
 		<div class="t-center p-l-15 p-r-15">
 			<a href="#">
-				<img class="h-size2" src="{{asset('images/icons/paypal.png')}}" alt="IMG-PAYPAL">
+				<img class="h-size2 footerImg p-r-10" src="{{asset('images/icons/bkash.png')}}" alt="IMG-PAYPAL">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="{{asset('images/icons/visa.png')}}" alt="IMG-VISA">
+				<img class="h-size2 footerImg p-r-10" src="{{asset('images/icons/rocket.png')}}" alt="IMG-PAYPAL">
+			</a>
+			
+			<a href="#">
+				<img class="h-size2 footerImg p-r-10" src="{{asset('images/icons/paypal.png')}}" alt="IMG-PAYPAL">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="{{asset('images/icons/mastercard.png')}}" alt="IMG-MASTERCARD">
+				<img class="h-size2 footerImg p-r-10" src="{{asset('images/icons/visa.png')}}" alt="IMG-VISA">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="{{asset('images/icons/express.png')}}" alt="IMG-EXPRESS">
+				<img class="h-size2 footerImg p-r-10" src="{{asset('images/icons/mastercard.png')}}" alt="IMG-MASTERCARD">
 			</a>
 
 			<a href="#">
-				<img class="h-size2" src="{{asset('images/icons/discover.png')}}" alt="IMG-DISCOVER">
+				<img class="h-size2 footerImg p-r-10" src="{{asset('images/icons/express.png')}}" alt="IMG-EXPRESS">
 			</a>
 
-			<!-- <div class="t-center s-text8 p-t-20">
+			<div class="t-center s-text8 p-t-20">
 				Copyright © 2018 All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-			</div> -->
+			</div>
 		</div>
 	</footer>
 

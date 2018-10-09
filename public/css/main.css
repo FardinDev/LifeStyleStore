@@ -2773,3 +2773,21 @@ input.num-product::-webkit-inner-spin-button {
 height: 100%;
 }
 
+/* footer image */
+
+
+.footerImg {
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .2s ease-in-out;  
+  }
+
+  .footerImg:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+  }
+
+  .footera{
+    padding: 10em;
+  }
